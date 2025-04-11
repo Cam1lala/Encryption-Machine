@@ -38,7 +38,7 @@ def main(page: ft.Page):
     page.theme_mode = ft.ThemeMode.SYSTEM
 
     input_field = ft.TextField(label="Enter your message", width=400, animate_opacity=300)
-    output_field = ft.TextField(label="Output", read_only=True, width=400, animate_opacity=300, animate_size=300, animate_position=300)
+    output_field = ft.TextField(label="Output", read_only=True, width=400)
     method_dropdown = ft.Dropdown(
         label="Select encryption method",
         options=[
@@ -97,5 +97,4 @@ def main(page: ft.Page):
     )
 
 ft.app(target=main)
-
 #para que no me diga que lo subi tarde, se lo subo asi porque no se como subirlo en git y si.
